@@ -1,0 +1,7 @@
+# Mini-Webpage-Application-Using-Drop-Down-Menus
+The Pick-A-Look website helps girls choose and browse through different looks from makeup, outfits, to accessories. It is also used for inspirations and ideas.
+
+Once the user first goes to the "Pick-A-Look" login page, they will be asked to either login or signup. If the user is new, the user should sign up with first name, last name, email and password. If the user attempts to login without signing up or with blank fields, they will not be logged on and an error message will appear on screen. Once the user signs up, they will be redirected to the main page of the website and their information will be stored into the database. They are now able to log on with the same email and password moving forward each time. The users are also able to browse through three different buttons: makeup, outfits, and accessories. Whichever button the user chooses to click, on that webpage, there will be 1-2 dropdown menus shown. The dropdown menu will give the user different styles for a specific look, and once the user clicks on one of the options from the dropdown menu, they will be redirected to another tab. The tab will either show the user a YouTube video, an online blog, or a shopping website. All of it will be inspiration or to give you a step-by-step guide on a certain look.
+
+The webpages were created using HTML and CSS, and the connections for the database and buttons to use for navigating to third party websites was created with javascript and php.
+
