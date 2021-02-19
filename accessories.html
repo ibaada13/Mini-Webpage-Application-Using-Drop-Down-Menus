@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<body BGCOLOR="ffbdc7" TEXT="4c3639">
+
+<h1 style = font-size:35px> <center> What Kind of Accessories Are You Looking For? </center> </h1>
+
+<center>
+    <form name="purse">
+        <select name="purseMenu" id="purseMenu" style = "height: 40px">
+            <option value="nothing" disabled selected="selected"> Handbags and Purses! </option>
+            <option value="https://www.aldoshoes.com/ca/en/women/handbags"> ALDO and Accessories </option>
+            <option value="https://www.katespade.com/handbags/"> Kate Spade </option>
+            <option value="https://www.callitspring.com/ca/en/women/handbags"> Call it Spring </option>
+            <option value="https://ca.coach.com/en_CA/shop/women-handbags"> Coach </option>
+        </select>
+    </form>
+</center>
+
+<center>
+    <form name="shoes">
+        <select name="shoesWebsite" id="shoesWebsite" style = "height: 40px">
+            <option value="nothing" disabled selected="selected"> Shoes! </option>
+            <option value="https://www.aldoshoes.com/ca/en"> ALDO Shoes</option>
+            <option value="https://www.callitspring.com/ca/en"> Call it Spring </option>
+            <option value="https://www.zara.com/ca/en/woman-shoes-l1251.html"> Zara Shoes</option>
+            <option value="https://ca.coach.com/en_CA/shop/women-shoes"> Coach </option>
+        </select>
+    </form>
+</center>
+
+    <script type="text/javascript">
+        var urlthree = document.getElementById('purseMenu');
+        urlthree.onchange = function() {
+            var userpick = this.options[this.selectedIndex];
+            if (userpick.value != "nothing") {
+                window.open(userpick.value, "Purse Websites", "");
+            }
+        }
+        
+        var urlTwo = document.getElementById('shoesWebsite');
+        urlfour.onchange = function() {
+            var useroption = this.options[this.selectedIndex];
+            if (useroption.value != "nothing") {
+                window.open(useroption.value, "Shoe Websites", "");
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>

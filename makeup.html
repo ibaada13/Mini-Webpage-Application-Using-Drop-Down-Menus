@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body BGCOLOR="ffbdc7" TEXT="4c3639">
+
+<h1 style = font-size:35px> <center> What Kind of Makeup Are You Looking For? </center> </h1>
+
+<center>
+    <form name="makeup">
+        <select name="makeupMenu" id="makeupMenu" style = "height: 40px"; TEXT="4c3639">
+            <option value="nothing" disabled selected="selected"> Select a Makeup Look! </option>
+            <option value="https://www.youtube.com/watch?v=xZuytMLbRDE&ab_channel=StephanieBailey"> Five Minute Makeup </option>
+            <option value="https://www.youtube.com/watch?v=PGTG6q7GubY&ab_channel=CarliBybel"> Simple Every Day Makeup </option>
+            <option value="https://www.youtube.com/watch?v=IIg1MlvkiuQ&ab_channel=PAINTEDBYSPENCER"> Glam Makeup </option>
+            <option value="https://www.youtube.com/watch?v=CfFh3cIJMog&ab_channel=SianLilly"> No Foundation Makeup </option>
+            <option value="https://www.youtube.com/watch?v=Miu0NHPr8T4&ab_channel=HungVanngo"> 90's Inspired Makeup </option>
+        </select>
+    </form>
+</center>
+
+    <script type="text/javascript">
+        var url = document.getElementById('makeupMenu'); //takes the id from the above form
+        url.onchange = function() {
+            var userPick = this.options[this.selectedIndex]; // userPick is the variable chosen for when the user picks a specific index within the dropdown menu
+            if (userPick.value != "nothing") {
+                window.open(userPick.value, "Makeup Page", ""); // once clicked, opens a new window tab to the service
+            }
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<body BGCOLOR="ffbdc7" TEXT="4c3639">
+
+<h1 style = font-size:35px> <center> What Kind of Outfit Are You Looking For? </center> </h1>
+
+<center>
+    <form name="outfit videos">
+        <select name="outfitMenu" id="outfitMenu" style = "height: 40px">
+            <option value="nothing" disabled selected="selected"> Inspiration Videos! </option>
+            <option value="https://www.youtube.com/watch?v=wv-Uk1vmVGs&ab_channel=itsyuyan"> Winter Outfits </option>
+            <option value="https://www.youtube.com/watch?v=yTPC4P77bcs&ab_channel=bestdressed"> Fall Outfits </option>
+            <option value="https://www.youtube.com/watch?v=MFGWz7WsMhQ&ab_channel=TiffanyGrace"> Date Night </option>
+            <option value="https://www.youtube.com/watch?v=F-HJ9WKmOXE&ab_channel=KerinaWang"> Loungewear Outfits </option>
+        </select>
+    </form>
+</center>
+
+<center>
+    <form name="outfit blogs">
+        <select name="outfitBlog" id="outfitBlog" style = "height: 40px">
+            <option value="nothing" disabled selected="selected"> Fashion Blog Posts! </option>
+            <option value="https://www.shotfromthestreet.com/"> LIZZY HADFIELD: Shot From The Street </option>
+            <option value="http://www.afashionfix.co.uk/"> HANNAH CROSSKEY: a fashion fix </option>
+            <option value="https://www.mariaalia.com/"> MARIA ALIA </option>
+            <option value="http://modestmira.blogspot.com/"> MODEST MIRA </option>
+        </select>
+    </form>
+</center>
+
+    <script type="text/javascript">
+        var url = document.getElementById('outfitMenu');
+        url.onchange = function() {
+            var userPicks = this.options[this.selectedIndex];
+            if (userPicks.value != "nothing") {
+                window.open(userPicks.value, "Outfit Videos", "");
+            }
+        }
+        
+        var urlTwo = document.getElementById('outfitBlog');
+        urlTwo.onchange = function() {
+            var userOption = this.options[this.selectedIndex];
+            if (userOption.value != "nothing") {
+                window.open(userOption.value, "Outfit Blogs", "");
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>
